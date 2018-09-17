@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XJHQRScanKit_Example' do
+  pod 'XJHQRScanKit', :path => '../'
+
+  target 'XJHQRScanKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
