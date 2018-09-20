@@ -1,5 +1,5 @@
 //
-//  XJHViewController.h
+//  SecondViewController.h
 //  XJHQRScanKit_Example
 //
 //  Created by xujunhao on 2018/9/19.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XJHViewController : UIViewController
+@interface SecondViewController : UIViewController
 
 @end

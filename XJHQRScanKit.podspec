@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A short description of XJHQRScanKit.'
 
   s.homepage         = 'https://github.com/cocoadogs/XJHQRScanKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -30,7 +28,20 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
+  s.public_header_files = 'XJHQRScanKit/XJHQRScanKit.h'
   s.source_files = 'XJHQRScanKit/Classes/**/*'
+  s.resource = 'XJHQRScanKit/XJHQRScanKit.bundle'
+
+  s.subspec 'XJHQRScanView' do |ss|
+	  ss.dependency 'Masonry', '~> 1.1.0'
+	  ss.ios.deployment_target = '8.0'
+	  ss.source_files = 'XJHQRScanKit/XJHQRScanView.{h,m}','XJHQRScanViewParamsBuilder.{h,m}'
+  end
+  
+  s.subspec 'XJHQRScanManager' do |ss|
+	  ss.ios.deployment_target = '8.0'
+	  ss.source_files = 'XJHQRScanKit/XJHQRScanManager.{h,m}', 'XJHQRScanKit/XJHQRScanManagerParamsBuilder.{h,m}'
+  end
   
   # s.resource_bundles = {
   #   'XJHQRScanKit' => ['XJHQRScanKit/Assets/*.png']
@@ -39,4 +50,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'ReactiveObjC', '~> 3.1.0'
 end
