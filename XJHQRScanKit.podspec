@@ -28,19 +28,19 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.public_header_files = 'XJHQRScanKit/XJHQRScanKit.h'
+#  s.public_header_files = 'XJHQRScanKit/XJHQRScanKit.h'
   s.source_files = 'XJHQRScanKit/Classes/**/*'
   s.resource = 'XJHQRScanKit/XJHQRScanKit.bundle'
 
   s.subspec 'XJHQRScanView' do |ss|
 	  ss.dependency 'Masonry', '~> 1.1.0'
 	  ss.ios.deployment_target = '8.0'
-	  ss.source_files = 'XJHQRScanKit/XJHQRScanView.{h,m}','XJHQRScanViewParamsBuilder.{h,m}'
+	  ss.source_files = 'XJHQRScanView.{h,m}','XJHQRScanViewParamsBuilder.{h,m}'
   end
   
   s.subspec 'XJHQRScanManager' do |ss|
 	  ss.ios.deployment_target = '8.0'
-	  ss.source_files = 'XJHQRScanKit/XJHQRScanManager.{h,m}', 'XJHQRScanKit/XJHQRScanManagerParamsBuilder.{h,m}'
+	  ss.source_files = 'XJHQRScanManager.{h,m}', 'XJHQRScanManagerParamsBuilder.{h,m}'
   end
   
   # s.resource_bundles = {
