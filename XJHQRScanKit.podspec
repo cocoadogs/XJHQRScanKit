@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XJHQRScanKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A tool for QR and bar code scanning.'
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'XJHQRScanView' do |ss|
 	  ss.dependency 'Masonry', '~> 1.1.0'
+      ss.resource = 'XJHQRScanKit/XJHQRScanKit.bundle'
 	  ss.ios.deployment_target = '8.0'
 	  ss.source_files = 'XJHQRScanKit/XJHQRScanView.{h,m}','XJHQRScanKit/XJHQRScanViewParamsBuilder.{h,m}'
   end
