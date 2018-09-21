@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XJHQRScanKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A tool for QR and bar code scanning.'
 
 # This description is used to generate tags and improve search results.
@@ -28,20 +28,20 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.public_header_files = 'XJHQRScanKit/Classes/XJHQRScanKit.h'
-  s.source_files = 'XJHQRScanKit/Classes/**/*'
-#  s.source_files = 'XJHQRScanKit/XJHQRScanKit.h'
+  s.public_header_files = 'XJHQRScanKit/XJHQRScanKit.h'
+#  s.source_files = 'XJHQRScanKit/**/*'
+  s.source_files = 'XJHQRScanKit/XJHQRScanKit.h'
   s.resource = 'XJHQRScanKit/XJHQRScanKit.bundle'
 
   s.subspec 'XJHQRScanView' do |ss|
 	  ss.dependency 'Masonry', '~> 1.1.0'
 	  ss.ios.deployment_target = '8.0'
-	  ss.source_files = 'XJHQRScanKit/Classes/XJHQRScanView.{h,m}','XJHQRScanKit/Classes/XJHQRScanViewParamsBuilder.{h,m}'
+	  ss.source_files = 'XJHQRScanKit/XJHQRScanView.{h,m}','XJHQRScanKit/XJHQRScanViewParamsBuilder.{h,m}'
   end
   
   s.subspec 'XJHQRScanManager' do |ss|
 	  ss.ios.deployment_target = '8.0'
-	  ss.source_files = 'XJHQRScanKit/Classes/XJHQRScanManager.{h,m}', 'XJHQRScanKit/Classes/XJHQRScanManagerParamsBuilder.{h,m}'
+	  ss.source_files = 'XJHQRScanKit/XJHQRScanManager.{h,m}', 'XJHQRScanKit/XJHQRScanManagerParamsBuilder.{h,m}'
   end
   
   # s.resource_bundles = {

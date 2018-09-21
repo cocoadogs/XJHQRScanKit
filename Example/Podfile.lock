@@ -4,13 +4,13 @@ PODS:
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - ReactiveObjC (3.1.0)
-  - XJHQRScanKit (0.1.0):
+  - XJHQRScanKit (0.1.1):
     - ReactiveObjC (~> 3.1.0)
-    - XJHQRScanKit/XJHQRScanManager (= 0.1.0)
-    - XJHQRScanKit/XJHQRScanView (= 0.1.0)
-  - XJHQRScanKit/XJHQRScanManager (0.1.0):
+    - XJHQRScanKit/XJHQRScanManager (= 0.1.1)
+    - XJHQRScanKit/XJHQRScanView (= 0.1.1)
+  - XJHQRScanKit/XJHQRScanManager (0.1.1):
     - ReactiveObjC (~> 3.1.0)
-  - XJHQRScanKit/XJHQRScanView (0.1.0):
+  - XJHQRScanKit/XJHQRScanView (0.1.1):
     - Masonry (~> 1.1.0)
     - ReactiveObjC (~> 3.1.0)
 
@@ -36,7 +36,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
-  XJHQRScanKit: ca2c7637a3eaac84c51d75ae8c71057902c86298
+  XJHQRScanKit: c813d53be41e570637210bdbdda0ed8e96727e4c
 
 PODFILE CHECKSUM: b11fbc742adae2a69beaba811a900ae82e537af0
 
